@@ -1,0 +1,17 @@
+<div class="weather-card">
+    <h1> Zip Temperature Lookup</h1>
+    
+    <%=form_with url: weather_path, method: :post, local: true, class: "weather-form" do |form| %>
+        <%= form.label :zip_code, "Enter Zip Code" %>
+        <%= form.text_field :zip_code, value: @zip_code, class: "zip-input" %>
+        <%= form.submit "Get The Current Temperature", class: "btn" %>
+    <% end %>   
+
+    <% if @error.present? %>
+        <p class="error"><%= @error %></p>
+    <% end %>
+
+    <% if @weather.present? %>
+        <p class="weather-result"><%= @weather %></p>
+    <% end %>
+</div>
