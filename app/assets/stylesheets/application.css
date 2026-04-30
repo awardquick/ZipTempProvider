@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  margin: 0;
+  padding: 2rem;
+}
+
+.weather-card {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+}
+
+.weather-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.zip-input {
+  padding: 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 1.1rem;
+}
+
+.weather-result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
